@@ -14,7 +14,6 @@ h2 {
     font-family: 'Courier New', Courier, monospace;
     font-weight: heavy;
     width: 720px;
-
 }
 
 h3 {
@@ -23,7 +22,7 @@ h3 {
     border-style: solid;
     font-family: 'Courier New', Courier, monospace;
     width: 720px;
-
+    margin: auto;
 }
 
 p {
@@ -34,18 +33,14 @@ p {
     font-weight: lighter;
     font-size: 16px;
     width: 720px;
-
+    margin: auto;
 }
 
 body {
-    background-color:whitesmoke;
+    background-color: whitesmoke;
     margin: auto;
     padding: 20px;
-    border-style:groove;
+    border-style: groove;
     border-width: 10px;
     width: 720px;
-
-    
-
 }
-
