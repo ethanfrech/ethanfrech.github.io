@@ -125,7 +125,18 @@
         <div>
             <h2>Examples</h2>
         </div>
-
+        <div>
+            <p>
+                <button id="helloWorld" onclick="helloWorld()">Try Me!</button>
+                <script type="module">
+                    import { helloWorld } from 'app.js'
+                    window.helloWorld = helloWorld;
+                </script>
+            </p>
+        </div>
+        <div>
+            <script src="appTwo.js"></script>
+        </div>
 </body>
 
 </html>

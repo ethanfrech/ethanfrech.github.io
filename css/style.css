@@ -30,7 +30,7 @@ p {
     background-color: burlywood;
     border-style: dashed;
     font-family: 'Courier New', Courier, monospace;
-    font-weight: lighter;
+    font-weight: light;
     font-size: 16px;
     width: 720px;
     margin: auto;
@@ -43,4 +43,15 @@ body {
     border-style: groove;
     border-width: 10px;
     width: 720px;
+}
+
+button {
+    margin: auto;
+    padding: 20px;
+    background-color: green;
+    align-self: center;
+    width: 720px;
+    font-weight: heavy;
+    font-size: 24px;
+    font-family: 'Courier New', Courier, monospace
 }
