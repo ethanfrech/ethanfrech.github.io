@@ -1,0 +1,42 @@
+h1 {
+    text-align: center;
+    background-color: gray;
+    border-style: double;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: heavy;
+}
+
+h2 {
+    text-align: left;
+    background-color: gainsboro;
+    border-style: double;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: heavy;
+}
+
+h3 {
+    text-align: left;
+    background-color: antiquewhite;
+    border-style: solid;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+p {
+    text-align: left;
+    background-color: burlywood;
+    border-style: dashed;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: lighter;
+    font-size: 16px;
+}
+
+body {
+    background-color:whitesmoke;
+    margin: auto;
+    padding: 20px;
+    border-style:groove;
+    border-width: 10px;
+    
+
+}
+

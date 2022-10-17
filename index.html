@@ -1,8 +1,13 @@
 <!DOCTYPE html>
 <html>
 
+
 <head>
-    <title>Page Title</title>
+    <meta charset="utf-8">
+    <title>Typescript Tutorial</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body>
@@ -10,42 +15,116 @@
     <h1>Typescript Tutorial</h1>
 
     <div>
-        <h2>The Fundamentals of Typescript</h2>
-        <h3>Static type-checking</h3>
-        <h3>Non-exception Failures</h3>
-        <h3>Types for Tooling</h3>
-        <h3>tsc, the TypeScript compiler</h3>
-        <h3>Emitting with Errors</h3>
-        <h3>Explicit Types</h3>
-        <h3>Erased Types</h3>
-        <h3>Downleveling</h3>
-        <h3>Strictiness</h3>
-    </div>
+        <div>
+            <h2>The Selling Points</h2>
+        </div>
+        <div>
+            <h3>Static type-checking</h3>
+            <p>One of the primary draws of TypeScript is static type-checking. JavaScript does not have static
+                type-checking, which means there is no
+                indication of the presence of a type-error in the code besides the manifestation of a bug at run time or
+                other unexpected behavior. If you try to
+                call an integer as a function in JavaScript it won't complain, but if you try to do the same thing with
+                TypeScript will provide an error before code is run.
+                This saves developers from spending time debugging due to type based errors.
+            </p>
+        </div>
+        <div>
+            <h3>Non-exception Failures</h3>
+            <p>
+                TypeScript will throw errors when accessing properties on objects that don't exist,
+                typos, uncalled functions, basic logic errors, and a slew of other common sense errors that
+                JavaScript does not complain about until runtime. Instead of delivering exceptions or "undefined"
+                TypeScript throws errors when it detects defects in the code structure.
+            </p>
+        </div>
+        <div>
+            <h3>Types for Tooling</h3>
+            <p>
+                TypeScript has other mechanisms of error preventions other error messages. TypeScript's type-checker can
+                assess whether or not the correct properties or variables are being accessed.
+                Based on this information TypeScript can suggest the attributes you are trying to access based on the
+                object and suggest them within the code editor. If the editor supports TypeScript this means
+                that the user will be provided with possible "quick-fixes" for detected errors as well as pertinent
+                useful navigation tools.
+            </p>
+        </div>
+        <div>
+            <h3>tsc, the TypeScript compiler</h3>
+            <p>
+                TypeScript uses a compiler named tsc. tsc is where the type-checking occurs. If there are any issues
+                with a
+                TypeScript file (.ts) tsc will provide comprehensive and concise errors. The
+                good the compiler will return a plain JavaScript file. tsc will do its best to deliver "clean readable
+                code"
+                that looks human made.
+            </p>
+            <div>
+                <h3>Emitting with Errors</h3>
+                <p>
+                    Even if tsc throws an error it will still return the TypeScript file as a plain JavaScript file. It
+                    will make you aware then proceed anyway, leaving fixing or leaving it at the users discretion.
 
-    <div>
-        <h2>Transitioning from JavaScript to Typescript</h2>
-        <h3>Setting up your Directories</h3>
-        <h3>Writing a Configuration File</h3>
-        <h3>Early Benefits</h3>
-        <h3>Integrating with Build Tools</h3>
-        <h3>Gulp</h3>
-        <h3>Webpack</h3>
-        <h3>Moving to TypeScript Files</h3>
-        <h3>Weeding out Errors</h3>
-        <h3>Getting Stricter Checks</h3>
-    </div>
+                </p>
+            </div>
+            <div>
+                <h3>Explicit Types</h3>
+                <p>
+                    By typing annotations within functions the user can specify what type each contained property is
+                    supposed to be. Based on this information TypeScript will throw an error if it finds code that
+                    assigns data of wrong type to an incompatible property. For example if a property was annoted as
+                    type String but is provided data with a type Integer. It is not required to specify types for each
+                    property, only when the user decided too.
+                </p>
+            </div>
+            <div>
+                <h3>Erased Types</h3>
+                <p>
+                    When you compile TypeScript into JavaScript with tsc the type annotations are completely removed.
 
-    <div>
-        <h2>TypeScript for JavaScript Programmers</h2>
-        <h3>Types by Inference</h3>
-        <h3>Defining Types</h3>
-        <h3>Composing Types</h3>
-        <h3>Structural Type System</h3>
-    </div>
+                </p>
+            </div>
+            <div>
+                <h3>Strictness</h3>
+                <p>
+                    In some cases TypeScript is most useful when only used to validate certain parts of the
+                    programming. A use can specify where in their program they would like to use type-checking and
+                    at what level of "strictness". Strictness can be all or nothing, or anything between based on user
+                    specification.
+                    Of course it is possible to create an entire project using strict TypeScript type-checking. A user
+                    can also toggle individual checks, most commonly noImplicitAny and strictNullChecks are toggled.
+                    noImplicityAny warns the user to specify types, which is the whole point of TypeScript.
+                    strictNullChecks warns based on whether or not the user has handled null or undefined in their
+                    functions.
 
-    <div>
-        <h2>Examples</h2>
-    </div>
+                </p>
+            </div>
+        </div>
+
+        <div>
+            <h2>Transitioning from JavaScript to Typescript</h2>
+            <h3>Setting up your Directories</h3>
+            <h3>Writing a Configuration File</h3>
+            <h3>Early Benefits</h3>
+            <h3>Integrating with Build Tools</h3>
+            <h3>Gulp</h3>
+            <h3>Webpack</h3>
+            <h3>Moving to TypeScript Files</h3>
+            <h3>Weeding out Errors</h3>
+            <h3>Getting Stricter Checks</h3>
+        </div>
+
+        <div>
+            <h2>TypeScript for JavaScript Programmers</h2>
+            <h3>Types by Inference</h3>
+            <h3>Defining Types</h3>
+            <h3>Composing Types</h3>
+            <h3>Structural Type System</h3>
+        </div>
+
+        <div>
+            <h2>Examples</h2>
+        </div>
 
 </body>
 
