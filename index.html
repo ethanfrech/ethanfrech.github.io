@@ -104,22 +104,58 @@
         <div>
             <h2>Transitioning from JavaScript to Typescript</h2>
             <h3>Setting up your Directories</h3>
+            <p>When setting up a TypeScript project it is important to separate your input .ts files from
+                the output path/directory. If the files are intermingled compiling with tcs runs the risk of overwriting
+                existing files. This also comes into play with bundling and transpiling.
+            </p>
             <h3>Writing a Configuration File</h3>
-            <h3>Early Benefits</h3>
+            <p>TypeScript uses a file called tsconfig.json to define specifications and options for your project.
+                This configuration file can determine things such as file inclusions and exclusions, whether or not pure
+                JavaScript is allowed, and even
+                use older versions of JavaScript for the output.
+            </p>
             <h3>Integrating with Build Tools</h3>
-            <h3>Gulp</h3>
-            <h3>Webpack</h3>
+            <p>You can use tools such as Gulp and Webpack with TypeScript. Gulp can be used to implement many other
+                popular build tools. Webpack can be used with a feature of Typescript called ts-loader in conjunction
+                with another feature called
+                source-map-loader. This allows for easier live previews and debugging. Wepack requires its own
+                configuration file, but this time its JavaScript
+                instead of JSON.
+            </p>
             <h3>Moving to TypeScript Files</h3>
+            <p>To utilize TypeScript you must change the file extension of your files from .js to .ts. If you are using
+                .jsx files you need to change them to tsc. It is likely you will encounter warnings, but the TypeScript
+                compiler will still compile your code.
+                You can adjust the settings to force you to fix all warnings before compilation, however it is likely
+                that many of these warning
             <h3>Weeding out Errors</h3>
-            <h3>Getting Stricter Checks</h3>
+            <p>Most of the errors you will need to deal with initially are due to the lack of TypeScript syntax. You
+                need to go through your code and refractor where
+                TypeScript syntax should be used.
+            </p>
         </div>
 
         <div>
             <h2>TypeScript for JavaScript Programmers</h2>
             <h3>Types by Inference</h3>
+            <p>TypeScript will in most cases generate types based of your code(variable instantiation and assignment in
+                particular). The core functionality that TypeScript provides
+                is adding Types to JavaScript. This helps mitigate the hard to spot bugs that plague JavaScript as a
+                result of the open ended 'any' type that applies to everything.
+            </p>
             <h3>Defining Types</h3>
+            <p>In some cases it is better to tell TypeScript what a data type should be as opposed to having it guess.
+                This is achievable for writing an
+                interface for your objects and functions that define types.
+            </p>
             <h3>Composing Types</h3>
+            <p>You can also specify a range of types that something can be. This is essentially just enumeration for
+                literal values that an object or object attribute is allowed to be</p>
             <h3>Structural Type System</h3>
+            <p>If two objects have the same shape they are perceived by the compiler of being of the same type.
+                While a variable may never be assigned an explicit type definition the shape of
+                the equivalent object will be used.
+            </p>
         </div>
 
         <div>
