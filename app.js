@@ -1,10 +1,6 @@
-"use strict";
-exports.__esModule = true;
-exports.helloWorld = exports.hello = void 0;
 function hello() {
     return "Hello World";
 }
-exports.hello = hello;
 ;
 function helloWorld() {
     if (document != null) {
@@ -17,5 +13,5 @@ function helloWorld() {
         }
     }
 }
-exports.helloWorld = helloWorld;
+export { hello, helloWorld };
 //# sourceMappingURL=app.js.map

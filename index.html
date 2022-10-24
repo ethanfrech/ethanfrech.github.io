@@ -4,6 +4,7 @@
 
 <head>
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Typescript Tutorial</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -163,11 +164,13 @@
         </div>
         <div>
             <p>
+               
                 <button id="helloWorld" onclick="helloWorld()">Try Me!</button>
                 <script type="module">
-                    import { helloWorld } from 'app.js'
+                    import {helloWorld} from './app.js'
                     window.helloWorld = helloWorld;
                 </script>
+                
             </p>
         </div>
         <div>
